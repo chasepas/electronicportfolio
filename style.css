@@ -5,5 +5,9 @@ header {
 
 body {
 	padding-top: 200px;
-	background-color: LightGray;
+	background-color: Gray;
+}
+
+#navbare {
+	opacity: 0.8;
 }

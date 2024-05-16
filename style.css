@@ -11,3 +11,17 @@ body {
 #navbare {
 	opacity: 0.8;
 }
+
+.dropdown-menu {
+  animation: 0.5s slideup;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(10%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

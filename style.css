@@ -1,11 +1,11 @@
 header {
-	background-image: linear-gradient(black, gray);
+	background-image: linear-gradient(SeaGreen, MediumSeaGreen);
 	
 }
 
 body {
 	padding-top: 200px;
-	background-color: Gray;
+	background-color: MediumSeaGreen;
 }
 
 #navbare {

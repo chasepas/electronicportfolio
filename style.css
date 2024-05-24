@@ -12,6 +12,10 @@ body {
 	opacity: 0.8;
 }
 
+#aboutme {
+  padding: 200px;
+}
+
 .dropdown-menu {
   animation: 0.5s slideup;
 }

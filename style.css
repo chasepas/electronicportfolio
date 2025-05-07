@@ -1,31 +1,240 @@
-header {
-	background-image: linear-gradient(SeaGreen, MediumSeaGreen);
-	
+/* Enhanced theme for Chase's Portfolio */
+:root {
+  --primary-color: #2e8b57;
+  --secondary-color: #3cb371;
+  --dark-color: #1e3d32;
+  --light-color: #e6f7ee;
+  --accent-color: #5cd686;
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 body {
-	padding-top: 200px;
-	background-color: MediumSeaGreen;
+  padding-top: 70px;
+  background-color: var(--secondary-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--light-color);
 }
 
+/* Improved header styling */
+header {
+  background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-weight: 700;
+  text-shadow: var(--text-shadow);
+  letter-spacing: 1px;
+}
+
+/* Container styling */
+.container {
+  background-color: var(--dark-color);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Enhanced navigation */
 #navbare {
-	opacity: 0.8;
+  opacity: 0.95;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--dark-color) !important;
 }
 
-#aboutme {
-  padding: 200px;
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
+.nav-link, .dropdown-item {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .dropdown-item:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Dropdown styling */
 .dropdown-menu {
-  animation: 0.5s slideup;
+  animation: 0.3s slideup;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 @keyframes slideup {
   from {
     transform: translateY(10%);
+    opacity: 0;
   }
-
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Content styling */
+h1, h2, h3 {
+  margin-bottom: 20px;
+  text-shadow: var(--text-shadow);
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.text-decoration-underline {
+  text-decoration: underline var(--accent-color) 3px !important;
+  padding-bottom: 5px;
+}
+
+/* Image styling */
+img {
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+.rounded-circle {
+  border: 4px solid var(--light-color);
+}
+
+/* Lists styling */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  list-style-type: square;
+}
+
+/* iFrame styling */
+iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Content card styling */
+.content-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.btn {
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.btn-outline-light {
+  border: 2px solid var(--light-color);
+  color: var(--light-color);
+}
+
+.btn-light:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+/* Icon styling */
+.bi {
+  margin-right: 5px;
+}
+
+/* Hover effect for images */
+.hover-effect {
+  transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Certificate and project card styling */
+.cert-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  height: 100%;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 30px 0;
+  margin-top: 50px;
+  border-top: 5px solid var(--accent-color);
+}
+
+/* Contact info formatting */
+.contact-info {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.contact-info i {
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+  color: var(--accent-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+  
+  header {
+    padding: 50px 10px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: auto;
   }
 }
